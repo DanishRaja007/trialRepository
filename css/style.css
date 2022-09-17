@@ -1,0 +1,134 @@
+@import 'utility.css';
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.links a{
+    text-decoration: none;
+}
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%,0 100% );
+}
+.container{
+    max-width: 1152px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+header nav .left .links a{
+    color: var(--pure);
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav{
+    padding: 2rem 0;
+}
+header nav .logo{
+    margin-right: 3rem;
+}
+header nav .left .links a:hover{
+    color: var(--primary);
+}
+.hero .left img{
+    width: 400px;
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.hero{
+    padding: 3rem 0;;
+}
+.hero .right{
+    margin-top: -7rem;
+}
+section{
+    padding: 6rem;
+}
+section.about .about-me-img{
+    height: 450px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+section.about .social{
+    display: flex;   
+}
+section.about .social a{
+    /* margin: 0px 4px;    THis is used by me( danish ) by self     */
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+section.about .social a:hover{
+    background-color: var(--primary);
+}
+/* 
+
+section.about .social a img{
+    filter: invert(100%);   
+    
+} 
+
+THis is used by me( danish ) by self and this is used to convert the img color if the image is in white it convert into black and if the image is in black it convert into white.
+*/
